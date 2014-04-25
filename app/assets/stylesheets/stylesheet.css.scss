@@ -1,13 +1,38 @@
-header {
+#homepage_body {
     background: image-url('front-range.jpeg') no-repeat center center fixed;
+
     background-size: cover;
-    height: 500px;
 }
 
-#header_container {
-    width: 980px;
+#homepage_body_container {
+    max-width: 980px;
+    margin: auto;
 }
 
-#header_container h1 {
-    float:right;
+#homepage_body_container li {
+  list-style: none;
+
+}
+
+#homepage_body_container a {
+  text-decoration: none;
+  float:right;
+  padding: 20px;
+
+}
+
+#content {
+  clear: both;
+}
+
+.button {
+  border: 2px solid white;
+  background: black;
+  color: white;
+}
+
+.button:hover {
+  border: 2px solid black;
+  background: white;
+  color: black;
 }
