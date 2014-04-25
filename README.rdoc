@@ -1,5 +1,5 @@
 
 
-heroku link:
+heroku staging link:  http://rachels-project.herokuapp.com/
 
-tracker project:
+tracker project:  https://www.pivotaltracker.com/n/projects/1067890
