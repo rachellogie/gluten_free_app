@@ -1,0 +1,13 @@
+header {
+    background: url('front-range.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 500px;
+}
+
+#header_container {
+    width: 980px;
+}
+
+#header_container h1 {
+    float:right;
+}
