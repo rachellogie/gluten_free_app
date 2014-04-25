@@ -8,4 +8,5 @@ Rails.application.routes.draw do
 
   post '/restaurants/new', to: 'restaurants#create'
 
+  get '/restaurants/:id', to: 'restaurants#show'
 end
