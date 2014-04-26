@@ -1,26 +1,55 @@
-<body id="homepage_body">
+<header>
+  <div id="header_container">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+    <div id="header_title">
+
+      <h1>The Conscious Eater</h1>
 
 
-<div id="homepage_body_container">
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Login</a></li>
-    </ul>
-  </nav>
+      <h2>We make it easy to find restaurants in the Denver/Boulder area for your dietary preferences. </h2>
 
-  <div id="content">
-
-  <h1>Welcome!</h1>
-
-
-  <h2>Here is my awesome app which will be a gluten-free restaurant guide for the
-    Denver/Boulder area and hopefully later do other kinds of dietary restrictions. Also it would be
-    awesome to eventually add recipe filtering. </h2>
-
-  <a href="/restaurants" class="button">Restaurants</a>
+      <a href="/restaurants" class="button">Restaurants</a>
+    </div>
   </div>
+</header>
 
+<div id="search">
+  <div id="search_container">
+
+    <div id="location">
+      <h2>Find restaurants in </h2>
+
+      <div class="dropdown">
+        <select name="location-dropdown" id="location-dropdown">
+          <option value="location">Location...</option>
+          <option value="downtown-denver">Downtown Denver</option>
+          <option value="pearl-st">Pearl Street, Boulder</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="options">
+      <h2>Show me...</h2>
+      <div class="dropdown">
+        <select name="options-dropdown" id="options-dropdown">
+          <option value="what?">Whaaa?</option>
+          <option value="gluten-free">Gluten Free Options</option>
+          <option value="dairy-free">Dairy Free Options</option>
+        </select>
+      </div>
+    </div>
+
+    <form method="post" action="/restaurants">
+      <input type="submit" value="Show me"/>
+    </form>
+  </div>
 </div>
-</body>
+
+
+

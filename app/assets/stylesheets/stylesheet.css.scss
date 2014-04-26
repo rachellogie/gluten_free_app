@@ -1,27 +1,31 @@
-#homepage_body {
+#header_container,
+#search_container
+{
+  max-width: 980px;
+  margin: auto;
+}
+
+header {
     background: image-url('front-range.jpeg') no-repeat center center fixed;
-
     background-size: cover;
+    height: 300px;
 }
 
-#homepage_body_container {
-    max-width: 980px;
-    margin: auto;
-}
 
-#homepage_body_container li {
+
+#header_container li {
   list-style: none;
 
 }
 
-#homepage_body_container a {
+#header_container a {
   text-decoration: none;
   float:right;
   padding: 20px;
 
 }
 
-#content {
+#header_title {
   clear: both;
 }
 
@@ -36,3 +40,44 @@
   background: white;
   color: black;
 }
+
+//----------search container --------
+
+#location-dropdown {
+  padding: 20px;
+  color: blue;
+  margin-left: 30px;
+}
+
+#location h2, .dropdown {
+  display: inline-block;
+}
+
+#search_container {
+  text-align: center;
+}
+
+.dropdown #location-dropdown {
+  border: 1 !important;  /*Removes border*/
+  -webkit-appearance: none;  /*Removes default chrome and safari style*/
+  -moz-appearance: none; /* Removes Default Firefox style*/
+  background: url('Arrow_chrome.png') no-repeat;  /*Adds background-image*/
+  background-position: 82px 7px;  /*Position of the background-image*/
+  width: 200px; /*Width of select dropdown to give space for arrow image*/
+  text-indent: 0.01px; /* Removes default arrow from firefox*/
+  text-overflow: "";  /*Removes default arrow from firefox*/
+
+  /*My custom style for fonts*/
+
+  color: #1455a2;
+
+}
+
+#options {
+  border: 1px solid black;
+}
+
+
+
+
+

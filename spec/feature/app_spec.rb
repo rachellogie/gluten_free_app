@@ -2,11 +2,6 @@ require 'spec_helper'
 
 feature 'homepage' do
 
-  scenario 'user sees the word welcome on the homepage' do
-    visit '/'
-    expect(page).to have_content "Welcome"
-  end
-
   scenario 'user can add a restaurant and see the list of restaurants' do
     visit '/'
     click_on "Restaurants"

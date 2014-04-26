@@ -1,5 +1,14 @@
 <form action="/restaurants/new" method="post">
-  <input type="text" name="name">
-  <input type="text" name="link">
+  Name: <input type="text" name="name">
+  Restaurant website link: <input type="text" name="link">
+
+    <div class="dropdown">
+      <select name="location_select" id="location_select">
+        <option value="Where">Where?</option>
+        <option value="pearl_st">Pearl Street, Boulder</option>
+        <option value="downtown_denver">Downtown Denver</option>
+      </select>
+    </div>
+  <input id="gluten_box" type="checkbox" name="gluten" value="gluten_free">Gluten free
   <input type="submit" value="Add">
 </form>
